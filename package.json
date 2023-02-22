@@ -1,5 +1,5 @@
 {
-  "name": "@tsparticles/lit-workspace",
+  "name": "lit-tsparticles-workspace",
   "version": "0.0.0",
   "private": true,
   "scripts": {
