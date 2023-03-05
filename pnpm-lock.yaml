@@ -41,7 +41,7 @@ importers:
       rollup: ^1.27.13
       rollup-plugin-filesize: ^6.2.1
       rollup-plugin-node-resolve: ^5.2.0
-      rollup-plugin-terser: ^5.1.3
+      rollup-plugin-terser: ^7.0.0
       sinon: ^15.0.1
       tsparticles: ^2.8.0
       typescript: ^4.9.4
@@ -73,7 +73,7 @@ importers:
       rollup: 1.32.1
       rollup-plugin-filesize: 6.2.1
       rollup-plugin-node-resolve: 5.2.0_rollup@1.32.1
-      rollup-plugin-terser: 5.3.1_rollup@1.32.1
+      rollup-plugin-terser: 7.0.2_rollup@1.32.1
       sinon: 15.0.1
       tsparticles: 2.8.0
       typescript: 4.9.4
@@ -1595,6 +1595,13 @@ packages:
   /@jridgewell/set-array/1.1.2:
     resolution: {integrity: sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==}
     engines: {node: '>=6.0.0'}
+    dev: true
+
+  /@jridgewell/source-map/0.3.2:
+    resolution: {integrity: sha512-m7O9o2uR8k2ObDysZYzdfhb08VuEml5oWGiosa1VdaPZ/A6QyPkAJuwN0Q1lhULOf6B7MtQmHENS743hWtCrgw==}
+    dependencies:
+      '@jridgewell/gen-mapping': 0.3.2
+      '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
   /@jridgewell/sourcemap-codec/1.4.14:
@@ -7417,12 +7424,13 @@ packages:
       filelist: 1.0.4
       minimatch: 3.1.2
 
-  /jest-worker/24.9.0:
-    resolution: {integrity: sha512-51PE4haMSXcHohnSMdM42anbvZANYTqMrr52tVKPqqsPJMzoP6FYYDVqahX/HrAoKEKz3uUPzSvKs9A3qR4iVw==}
-    engines: {node: '>= 6'}
+  /jest-worker/26.6.2:
+    resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
+    engines: {node: '>= 10.13.0'}
     dependencies:
+      '@types/node': 18.11.18
       merge-stream: 2.0.0
-      supports-color: 6.1.0
+      supports-color: 7.2.0
     dev: true
 
   /js-sdsl/4.3.0:
@@ -10124,18 +10132,17 @@ packages:
       rollup-pluginutils: 2.8.2
     dev: true
 
-  /rollup-plugin-terser/5.3.1_rollup@1.32.1:
-    resolution: {integrity: sha512-1pkwkervMJQGFYvM9nscrUoncPwiKR/K+bHdjv6PFgRo3cgPHoRT83y2Aa3GvINj4539S15t/tpFPb775TDs6w==}
+  /rollup-plugin-terser/7.0.2_rollup@1.32.1:
+    resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==}
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
     peerDependencies:
-      rollup: '>=0.66.0 <3'
+      rollup: ^2.0.0
     dependencies:
       '@babel/code-frame': 7.18.6
-      jest-worker: 24.9.0
+      jest-worker: 26.6.2
       rollup: 1.32.1
-      rollup-pluginutils: 2.8.2
       serialize-javascript: 4.0.0
-      terser: 4.8.1
+      terser: 5.16.5
     dev: true
 
   /rollup-pluginutils/2.8.2:
@@ -10820,6 +10827,17 @@ packages:
       acorn: 8.8.1
       commander: 2.20.3
       source-map: 0.6.1
+      source-map-support: 0.5.21
+    dev: true
+
+  /terser/5.16.5:
+    resolution: {integrity: sha512-qcwfg4+RZa3YvlFh0qjifnzBHjKGNbtDo9yivMqMFDy9Q6FSaQWSB/j1xKhsoUFJIqDOM3TsN6D5xbrMrFcHbg==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      '@jridgewell/source-map': 0.3.2
+      acorn: 8.8.1
+      commander: 2.20.3
       source-map-support: 0.5.21
     dev: true
 
