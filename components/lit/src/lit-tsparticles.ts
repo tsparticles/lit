@@ -1,4 +1,4 @@
-import { LitElement, html } from "lit";
+import { LitElement, html, PropertyValues } from "lit";
 import { property, customElement } from "lit/decorators.js";
 import { Container, Engine, tsParticles } from "tsparticles-engine";
 
@@ -23,37 +23,41 @@ export class LitParticles extends LitElement {
 
   container?: Container;
 
+  initialized = false;
+
   @property({ type: Function })
   particlesInit?: (engine: Engine) => Promise<void>;
 
   @property({ type: Function })
   particlesLoaded?: (container?: Container) => Promise<void>;
 
-  constructor() {
-    super();
-
-    this.particlesInit?.(tsParticles);
-  }
-
   connectedCallback() {
     super.connectedCallback();
 
-    tsParticles.load(this.id, this.options).then(async (container) => {
-      this.container = container;
-
-      await this.particlesLoaded?.(container);
+    this.particlesInit?.(tsParticles).then(() => {
+      this.initialized = true;
     });
   }
 
-  disconnectedCallback(): void {
-    if (this.container) {
-      this.container.destroy();
-    }
+  update(changedProperties: PropertyValues) {
+    super.update(changedProperties);
 
-    super.disconnectedCallback();
+    if (this.initialized) {
+      tsParticles.load(this.id, this.options).then((container) => {
+        this.container = container;
+
+        this.particlesLoaded?.(container);
+      });
+    }
   }
 
   render() {
-    return html`<div id=${this.id}></div>`;
+    if (!this.initialized) {
+      return html``;
+    }
+
+    return html`<div id=${this.id}>
+      <canvas></canvas>
+    </div>`;
   }
 }
