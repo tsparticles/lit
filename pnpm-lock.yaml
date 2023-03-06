@@ -83,9 +83,11 @@ importers:
     specifiers:
       '@web/dev-server': ^0.1.32
       lit: ^2.5.0
+      tsparticles-engine: ^2.9.3
       typescript: ^4.7.4
     dependencies:
       lit: 2.5.0
+      tsparticles-engine: 2.9.3
     devDependencies:
       '@web/dev-server': 0.1.35
       typescript: 4.9.4
@@ -10931,6 +10933,11 @@ packages:
     resolution: {integrity: sha512-r0cWKxefQkQCzU+RRG/82VQnl/fAkws27EuYIOKcnHiYsWnZYcX8iPiQs/qgDajP0haBSn4Vui8UbTCAwSFniw==}
     requiresBuild: true
     dev: true
+
+  /tsparticles-engine/2.9.3:
+    resolution: {integrity: sha512-iAD8LyRH//kx10fDMm6AfQV6dRHs1ZacUUHqVwfutcqM4x1IV2ygpjk0X87LKCnBxYeIMG78+tlxXpnpwUccOg==}
+    requiresBuild: true
+    dev: false
 
   /tsparticles-interaction-external-attract/2.8.0:
     resolution: {integrity: sha512-9M0aiVcv6KmjlYFJO7YiNHMehLGsABY0fJjI8qW0zsNVDDWw7Cc7TVdjJUyoIPimmwQtX5WFkzBxO4+bEIVyVQ==}
