@@ -31,7 +31,7 @@
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@open-wc/testing": "^3.0.0",
-    "@open-wc/testing-karma": "^3.2.19",
+    "@open-wc/testing-karma": "^4.0.0",
     "@rollup/plugin-replace": "^5.0.0",
     "@types/chai": "^4.2.7",
     "@types/mocha": "^10.0.0",
