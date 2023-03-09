@@ -6,7 +6,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./",
+    "outDir": "./lib",
     "rootDir": "./src",
     "strict": true,
     "noUnusedLocals": true,
