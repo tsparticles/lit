@@ -3,7 +3,7 @@
   "version": "2.9.3",
   "description": "Official tsParticles Lit Component - Easily create highly customizable particle, confetti and fireworks animations and use them as animated backgrounds for your website. Ready to use components available also for Web Components, Angular, React, Vue.js (2.x and 3.x), Svelte, jQuery, Preact, Riot.js, Solid.js, Inferno.",
   "type": "module",
-  "main": "lib/lit-tsparticles.js",
+  "main": "./lib/lit-tsparticles.js",
   "scripts": {
     "serve": "wds --node-resolve -nwo demo",
     "build": "tsc",
@@ -18,17 +18,13 @@
   ],
   "dependencies": {
     "lit": "^2.6.1",
-    "lit-element": "^3.2.2",
     "tsparticles-engine": "^2.9.3"
   },
   "devDependencies": {
-    "@web/dev-server": "^0.1.32",
     "typescript": "^4.9.5"
   },
   "exports": {
-    "./lib/lit-tsparticles.js": {
-      "default": "./lib/lit-tsparticles.js"
-    }
+    ".": "./lib/lit-tsparticles.js"
   },
   "files": [
     "/lib"

@@ -1,6 +1,11 @@
 import { LitElement, html, PropertyValues } from "lit";
 import { property, customElement } from "lit/decorators.js";
-import { Container, Engine, tsParticles } from "tsparticles-engine";
+import {
+  Container,
+  Engine,
+  ISourceOptions,
+  tsParticles,
+} from "tsparticles-engine";
 
 /**
  * The LitParticles element.
@@ -19,43 +24,31 @@ export class LitParticles extends LitElement {
    * The options
    */
   @property({ type: Object })
-  options = {};
+  options?: ISourceOptions;
+
+  /**
+   * The url
+   */
+  @property({ type: String })
+  url?: string;
 
   container?: Container;
-
-  initialized = false;
-
-  @property({ type: Function })
-  particlesInit?: (engine: Engine) => Promise<void>;
-
-  @property({ type: Function })
-  particlesLoaded?: (container?: Container) => Promise<void>;
-
-  connectedCallback() {
-    super.connectedCallback();
-
-    this.particlesInit?.(tsParticles).then(() => {
-      this.initialized = true;
-    });
-  }
 
   update(changedProperties: PropertyValues) {
     super.update(changedProperties);
 
-    if (this.initialized) {
-      tsParticles.load(this.id, this.options).then((container) => {
-        this.container = container;
+    const id = this.id ?? "tsparticles";
 
-        this.particlesLoaded?.(container);
-      });
+    if (this.options) {
+      tsParticles.load(id, this.options);
+    } else if (this.url) {
+      tsParticles.loadJSON(id, this.url);
+    } else {
+      throw new Error("No options or url provided");
     }
   }
 
   render() {
-    if (!this.initialized) {
-      return html``;
-    }
-
     return html`<div id=${this.id}>
       <canvas></canvas>
     </div>`;
