@@ -5,7 +5,6 @@
     "components/*",
     "components-legacy/*"
   ],
-  "useWorkspaces": true,
   "version": "2.9.3",
   "npmClient": "pnpm",
   "conventionalCommits": true,
