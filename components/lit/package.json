@@ -17,7 +17,7 @@
     "typescript"
   ],
   "dependencies": {
-    "lit": "^2.6.1",
+    "lit": "^3.0.0",
     "tsparticles-engine": "^2.9.3"
   },
   "devDependencies": {
