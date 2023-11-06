@@ -30,7 +30,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@open-wc/testing": "^3.0.0",
+    "@open-wc/testing": "^4.0.0",
     "@open-wc/testing-karma": "^4.0.0",
     "@rollup/plugin-replace": "^5.0.0",
     "@types/chai": "^4.2.7",
