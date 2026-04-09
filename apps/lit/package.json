@@ -23,7 +23,7 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "lit": "^2.6.1",
-    "lit-tsparticles": "^2.9.3",
+    "lit-tsparticles": "workspace:^",
     "tsparticles": "^2.9.3",
     "tsparticles-engine": "^2.9.3"
   },
