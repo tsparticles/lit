@@ -1,6 +1,25 @@
-# LitElement TypeScript starter 
+# @tsparticles/lit
 
-This project includes a sample component using LitElement with TypeScript.
+This repository contains the Lit wrapper and demo for tsParticles.
+
+## Usage Example
+
+```html
+<lit-particles
+    id="tsparticles"
+    style="position: fixed; inset: 0; z-index: -1;"
+    options='{ "background": { "color": "#000" }, "particles": { "move": { "enable": true } } }'
+></lit-particles>
+```
+
+## Workspace Build Architecture
+
+This repository now supports both orchestrators:
+
+- `pnpm run build`
+- `pnpm run build:ci`
+- `pnpm run build:lerna`
+- `pnpm run build:nx`
 
 ## Setup
 
