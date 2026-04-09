@@ -17,10 +17,14 @@
     "typescript"
   ],
   "dependencies": {
-    "lit": "^2.6.1",
-    "tsparticles-engine": "^2.9.3"
+    "@tsparticles/engine": "^4.0.0-beta.11"
+  },
+  "peerDependencies": {
+    "@tsparticles/engine": ">=3 <5",
+    "lit": ">=2.6.1 <4"
   },
   "devDependencies": {
+    "lit": "^3.2.0",
     "typescript": "^5.0.0"
   },
   "exports": {

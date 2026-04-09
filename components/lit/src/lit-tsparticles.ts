@@ -5,7 +5,7 @@ import {
   Engine,
   ISourceOptions,
   tsParticles,
-} from "tsparticles-engine";
+} from "@tsparticles/engine";
 
 /**
  * The LitParticles element.
@@ -40,9 +40,9 @@ export class LitParticles extends LitElement {
     const id = this.id ?? "tsparticles";
 
     if (this.options) {
-      tsParticles.load(id, this.options);
+      void tsParticles.load({ id, options: this.options });
     } else if (this.url) {
-      tsParticles.loadJSON(id, this.url);
+      void tsParticles.load({ id, url: this.url });
     } else {
       throw new Error("No options or url provided");
     }

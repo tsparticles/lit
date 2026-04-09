@@ -5,4 +5,4 @@ allowBuilds:
   '@parcel/watcher': true
   core-js-bundle: true
   nx: true
-  tsparticles-engine: true
+  '@tsparticles/engine': true
