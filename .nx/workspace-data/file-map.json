@@ -1,0 +1,187 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.4",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "lit-tsparticles-demo": [
+        {
+          "file": "apps/lit/.eleventy.cjs",
+          "hash": "14123107850080423296"
+        },
+        {
+          "file": "apps/lit/.eslintrc.json",
+          "hash": "7339627905463489775"
+        },
+        {
+          "file": "apps/lit/.gitignore",
+          "hash": "10376839516627096854"
+        },
+        {
+          "file": "apps/lit/.prettierrc.json",
+          "hash": "2265954507138374104"
+        },
+        {
+          "file": "apps/lit/LICENSE",
+          "hash": "5059945701115356154"
+        },
+        {
+          "file": "apps/lit/README.md",
+          "hash": "9223784154333551780"
+        },
+        {
+          "file": "apps/lit/dev/README.md",
+          "hash": "6588875779010953971"
+        },
+        {
+          "file": "apps/lit/dev/index.html",
+          "hash": "8443011883056709411"
+        },
+        {
+          "file": "apps/lit/package.json",
+          "hash": "14255897612982186369",
+          "deps": [
+            "npm:@11ty/eleventy",
+            "npm:@11ty/eleventy-plugin-syntaxhighlight",
+            "npm:@open-wc/testing",
+            "npm:@open-wc/testing-karma",
+            "npm:@rollup/plugin-replace",
+            "npm:@types/chai",
+            "npm:@types/mocha",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@web/dev-server",
+            "npm:chai",
+            "npm:deepmerge",
+            "npm:eslint",
+            "npm:karma@6.4.4",
+            "npm:karma-chai",
+            "npm:karma-mocha@2.0.1",
+            "npm:lit-analyzer",
+            "npm:mocha@10.8.2",
+            "npm:node-resolve",
+            "npm:prettier",
+            "npm:rimraf@5.0.10",
+            "npm:rollup@3.30.0",
+            "npm:rollup-plugin-filesize",
+            "npm:@rollup/plugin-node-resolve@6.1.0",
+            "npm:rollup-plugin-terser",
+            "npm:sinon",
+            "npm:typescript@5.9.3",
+            "npm:web-component-analyzer",
+            "npm:lit@2.8.0",
+            "lit-tsparticles",
+            "npm:tsparticles",
+            "npm:@tsparticles/engine"
+          ]
+        },
+        {
+          "file": "apps/lit/rollup.config.js",
+          "hash": "16230549913967316293"
+        },
+        {
+          "file": "apps/lit/src/index.ts",
+          "hash": "14813713327771134497"
+        },
+        {
+          "file": "apps/lit/tsconfig.json",
+          "hash": "8537384012578718106"
+        },
+        {
+          "file": "apps/lit/web-dev-server.config.mjs",
+          "hash": "6866894020813363768"
+        }
+      ],
+      "lit-tsparticles": [
+        {
+          "file": "components/lit/.gitignore",
+          "hash": "13764856907760082851"
+        },
+        {
+          "file": "components/lit/CONTROLLER_PATTERN.md",
+          "hash": "9846995421237287370"
+        },
+        {
+          "file": "components/lit/package.json",
+          "hash": "14082328930473498547",
+          "deps": [
+            "npm:@tsparticles/engine",
+            "npm:lit@3.3.2",
+            "npm:typescript@5.9.3"
+          ]
+        },
+        {
+          "file": "components/lit/src/lit-tsparticles.ts",
+          "hash": "9847293622422146778"
+        },
+        {
+          "file": "components/lit/tsconfig.json",
+          "hash": "6028216581644798726"
+        },
+        {
+          "file": "components/lit/typedoc.json",
+          "hash": "11054314472691956425"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".commitlintrc.json",
+        "hash": "1796968487329949434"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "11849325337616641890"
+      },
+      {
+        "file": ".github/workflows/nodejs.yml",
+        "hash": "12275014048709713604"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5183311937359661647"
+      },
+      {
+        "file": ".husky/.gitignore",
+        "hash": "4575667007673887251"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "16875289102099280554"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "1648481045346253054"
+      },
+      {
+        "file": "README.md",
+        "hash": "17026187017466367751"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "57550601654467174"
+      },
+      {
+        "file": "nx.json",
+        "hash": "93868292560654171"
+      },
+      {
+        "file": "package.json",
+        "hash": "3674754353087146396"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "17817711585810171835"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "3950704556454505782"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "12562958106791571636"
+      }
+    ]
+  }
+}
